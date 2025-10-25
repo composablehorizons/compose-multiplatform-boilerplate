@@ -64,6 +64,7 @@ kotlin {
             implementation(compose.runtime)
             implementation(compose.foundation)
             implementation(compose.ui)
+            implementation(compose.components.uiToolingPreview)
             implementation(libs.composables.composeunstyled)
             implementation(libs.composables.icons.lucide)
             implementation(libs.composables.ripple)
@@ -119,4 +120,8 @@ compose.desktop {
             packageVersion = "1.0.0"
         }
     }
+}
+
+dependencies {
+    debugImplementation(compose.uiTooling)
 }

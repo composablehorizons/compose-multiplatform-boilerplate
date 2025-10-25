@@ -31,6 +31,7 @@ import com.composables.icons.lucide.Lucide
 import com.composeunstyled.Icon
 import com.composeunstyled.Text
 import com.composeunstyled.theme.Theme
+import org.jetbrains.compose.ui.tooling.preview.Preview
 
 @Composable
 fun App() {
@@ -94,4 +95,10 @@ fun App() {
             }
         }
     }
+}
+
+@Preview
+@Composable
+fun AppPreview() {
+    App()
 }
